@@ -19,10 +19,10 @@ data_list = [
 print(filter_by_state(data_list))
 
 
-def sort_by_date(client_data: list, direction: bool = True) -> list:
+def sort_by_date(client_data: list, ascending: bool = True) -> list:
     """Функция сортирует входящий список по дате (date) и возвращает новый отсортированный список."""
 
-    sorted_client_data = sorted(client_data, key=lambda x: x["date"], reverse=direction)
+    sorted_client_data = sorted(client_data, key=lambda x: x["date"], reverse=ascending)
     return sorted_client_data
 
 
